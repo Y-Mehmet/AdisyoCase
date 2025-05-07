@@ -1,0 +1,15 @@
+C:\Github\AdisyoCase\HeartBeatApp\HeartBeatApp\bin\Debug\net8.0\HeartBeatApp.exe
+C:\Github\AdisyoCase\HeartBeatApp\HeartBeatApp\bin\Debug\net8.0\HeartBeatApp.deps.json
+C:\Github\AdisyoCase\HeartBeatApp\HeartBeatApp\bin\Debug\net8.0\HeartBeatApp.runtimeconfig.json
+C:\Github\AdisyoCase\HeartBeatApp\HeartBeatApp\bin\Debug\net8.0\HeartBeatApp.dll
+C:\Github\AdisyoCase\HeartBeatApp\HeartBeatApp\bin\Debug\net8.0\HeartBeatApp.pdb
+C:\Github\AdisyoCase\HeartBeatApp\HeartBeatApp\obj\Debug\net8.0\HeartBeatApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Github\AdisyoCase\HeartBeatApp\HeartBeatApp\obj\Debug\net8.0\HeartBeatApp.AssemblyInfoInputs.cache
+C:\Github\AdisyoCase\HeartBeatApp\HeartBeatApp\obj\Debug\net8.0\HeartBeatApp.AssemblyInfo.cs
+C:\Github\AdisyoCase\HeartBeatApp\HeartBeatApp\obj\Debug\net8.0\HeartBeatApp.csproj.CoreCompileInputs.cache
+C:\Github\AdisyoCase\HeartBeatApp\HeartBeatApp\obj\Debug\net8.0\HeartBeatApp.sourcelink.json
+C:\Github\AdisyoCase\HeartBeatApp\HeartBeatApp\obj\Debug\net8.0\HeartBeatApp.dll
+C:\Github\AdisyoCase\HeartBeatApp\HeartBeatApp\obj\Debug\net8.0\refint\HeartBeatApp.dll
+C:\Github\AdisyoCase\HeartBeatApp\HeartBeatApp\obj\Debug\net8.0\HeartBeatApp.pdb
+C:\Github\AdisyoCase\HeartBeatApp\HeartBeatApp\obj\Debug\net8.0\HeartBeatApp.genruntimeconfig.cache
+C:\Github\AdisyoCase\HeartBeatApp\HeartBeatApp\obj\Debug\net8.0\ref\HeartBeatApp.dll

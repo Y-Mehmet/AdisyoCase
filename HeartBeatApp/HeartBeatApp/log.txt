@@ -1,0 +1,1 @@
+[8.05.2025 00:33:09] [0]  [Hedef makine etkin olarak reddettiğinden bağlantı kurulamadı. (localhost:5000)] [https://localHost:5000]
