@@ -4,11 +4,14 @@ Bu proje, belirli aralıklarla yapılandırılmış URL'leri kontrol ederek hizm
 
 ---
 
+
 ## Başlangıç
 
 Aşağıdaki adımları izleyerek projeyi lokal ortamınızda hızlıca çalıştırabilirsiniz.
 
----
+
+https://myaccount.google.com/u/1/apppasswords?rapt=AEjHL4ONv2JbBrfoArmtZu_QIg8BlkbsIZ8OxjKJ6jNodPBitBKOnBbHpxn8cDZR_LXrgvKWokn28LxA5T_ZEBWlzzEghlTyWmS4cYgVnWSEpvNm3Ys-aPE 
+ yukarıdaki linkten yeni pasword oluşuturun ve config.json'a  yeni password atayın json mail bilglerini düzenleyin 
 cmd ile komut istemi açın 
 cd C:\Github\AdisyoCase\WebApplication1\WebApplication1
 dotnet run
