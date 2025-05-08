@@ -11,15 +11,16 @@ using System.Net.Mail;
 
    public class UrlMonitor
 {
-    private readonly URLDataConfig _urlDataConfig;
+     private readonly URLDataConfig _urlDataConfig;
+    private readonly ILogger _logger;
+    private readonly IEmailSender _emailSender;
 
-    private string _baseLogPath = "C:\\Github\\AdisyoCase\\HeartBeatApp\\HeartBeatApp\\log.txt";
-    
-   private readonly IEmailSender _emailSender;
+    private readonly string _baseLogPath = "C:\\Github\\AdisyoCase\\HeartBeatApp\\HeartBeatApp\\log.txt";
 
-    public UrlMonitor(URLDataConfig urlDataConfig, IEmailSender emailSender)
+    public UrlMonitor(URLDataConfig urlDataConfig, ILogger logger, IEmailSender emailSender)
     {
         _urlDataConfig = urlDataConfig;
+        _logger = logger;
         _emailSender = emailSender;
     }
 
@@ -36,11 +37,28 @@ using System.Net.Mail;
                 var response = await httpClient.GetAsync(_urlDataConfig.URL);
                 if (response.IsSuccessStatusCode)
                 {
-                    await Logger.Instance.AddLog(_baseLogPath, (int)response.StatusCode, "Success", _urlDataConfig.URL);
+                   
+                    Log log = new Log()
+                    {
+                        StatusCode = (int)response.StatusCode,
+                        Status = "Success",
+                        Msg = "Success web site is up",
+                        URL = _urlDataConfig.URL,
+                        Path = _baseLogPath
+                    };
+                   await _logger.AddLog(log);
                 }
                 else
                 {
-                    await Logger.Instance.AddLog(_baseLogPath, (int)response.StatusCode, "Failed", _urlDataConfig.URL);
+                    Log log = new Log()
+                    {
+                        StatusCode = (int)response.StatusCode,
+                        Status = "Failed",
+                        Msg = "Failed web site is down",
+                        URL = _urlDataConfig.URL,
+                        Path = _baseLogPath
+                    };
+                   await _logger.AddLog(log);
                     string to= _urlDataConfig.Email.To;
                     string subject = $"[Heartbeat Error] {_urlDataConfig.URL}";
                     string body = $@"
@@ -54,7 +72,15 @@ using System.Net.Mail;
             }
             catch (Exception ex)
             {
-                await Logger.Instance.AddLog(_baseLogPath, 000, ex.Message, _urlDataConfig.URL);
+                Log log = new Log()
+                    {
+                        StatusCode = 0,
+                        Status = "Failed",
+                        Msg = ex.Message,
+                        URL = _urlDataConfig.URL,
+                        Path = _baseLogPath
+                    };
+                  await _logger.AddLog(log);
             }
 
             // Her URL için farklı bir delay uygulanacak

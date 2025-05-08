@@ -34,11 +34,16 @@ public class Program
         }
         catch (Exception ex)
         {
-            await Logger.Instance.AddLog(
-                "C:\\Github\\AdisyoCase\\HeartBeatApp\\HeartBeatApp\\log.txt",
-                0,
-                ex.Message,
-                "Programs.Main");
+           
+                Log log= new Log()
+                {
+                    StatusCode = 0,
+                    Status = "Failed",
+                    Msg = ex.Message,
+                    URL = "C:\\Github\\AdisyoCase\\HeartBeatApp\\HeartBeatApp\\Programs.Main",
+                    Path = "C:\\Github\\AdisyoCase\\HeartBeatApp\\HeartBeatApp\\log.txt"
+                };
+                Console.WriteLine(log.ToString());
         }
     }
 }
@@ -66,4 +71,11 @@ public class Program
     {
         public required  URLDataConfig[] URLDatas { get; set; }
     }
-
+    public class Log
+{
+        public int StatusCode { get; set; }
+        public string Status { get; set; }
+        public string Msg { get; set; }
+        public string URL { get; set; }
+        public string Path { get; set; } = "C:\\Github\\AdisyoCase\\HeartBeatApp\\HeartBeatApp\\log.txt";
+}

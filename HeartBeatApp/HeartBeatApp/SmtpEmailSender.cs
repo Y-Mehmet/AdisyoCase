@@ -4,9 +4,13 @@ using System.Net.Mail;
 public class SmtpEmailSender : IEmailSender
 {
     private readonly EmailConfig _emailConfig;
+    private readonly ILogger _logger;
+    private readonly string _baseLogPath = "C:\\Github\\AdisyoCase\\HeartBeatApp\\HeartBeatApp\\log.txt";
 
-    public SmtpEmailSender(EmailConfig emailConfig)
+    public SmtpEmailSender(EmailConfig emailConfig, ILogger logger)
     {
+        _logger = logger;
+   
         _emailConfig = emailConfig;
     }
 
@@ -31,11 +35,16 @@ public class SmtpEmailSender : IEmailSender
         }
         }catch (Exception ex)
         {
-           await Logger.Instance.AddLog(
-                "C:\\Github\\AdisyoCase\\HeartBeatApp\\HeartBeatApp\\log.txt",
-                0,
-                ex.Message,
-                "SmtpEmailSender.SendEmailAsync");
+           
+                Log log = new Log()
+                {
+                    StatusCode = 0,
+                    Status = "Failed",
+                    Msg = ex.Message,
+                    URL = "C:\\Github\\AdisyoCase\\HeartBeatApp\\HeartBeatApp\\SmtpEmailSender.SendEmailAsync",
+                    Path = "C:\\Github\\AdisyoCase\\HeartBeatApp\\HeartBeatApp\\log.txt"
+                };
+                await _logger.AddLog(log);
         }
     }
 }
