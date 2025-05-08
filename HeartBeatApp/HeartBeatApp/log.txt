@@ -1,1 +1,4 @@
 [8.05.2025 00:33:09] [0]  [Hedef makine etkin olarak reddettiğinden bağlantı kurulamadı. (localhost:5000)] [https://localHost:5000]
+[8.05.2025 01:30:52] [0]  [The SSL connection could not be established, see inner exception.] [https://localHost:5000]
+[8.05.2025 01:33:17] [200]  [OK] [http://localhost:5000]
+[8.05.2025 01:33:47] [0]  [Hedef makine etkin olarak reddettiğinden bağlantı kurulamadı. (localhost:5000)] [http://localhost:5000]

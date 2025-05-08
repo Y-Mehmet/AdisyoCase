@@ -7,49 +7,37 @@ using System.IO;
 
 namespace HeartBeatApp
 {
-    internal class UrlMonitor
+    public class UrlMonitor
     {
         private readonly URLDataConfig _urlDataConfig;
         private string _baseLogPath = "C:\\Github\\AdisyoCase\\HeartBeatApp\\HeartBeatApp\\log.txt";
         public UrlMonitor(URLDataConfig urlDataCanfig)
         {
             _urlDataConfig = urlDataCanfig;
+            RecursiveHeartBeat(_urlDataConfig.URL, _urlDataConfig.Delay).GetAwaiter().GetResult();
         }
-        public async Task StartTask()
+        
+       public  async Task RecursiveHeartBeat(string url, int delay)
+    {
+        Console.WriteLine("Running RecursiveHeartBeat method is running");
+        HttpClient client = new HttpClient();
+        using HttpResponseMessage response = await client.GetAsync(url);
+        if (response.IsSuccessStatusCode)
         {
-            Console.WriteLine(" starting task ");
-            try
-            {
-                HttpClient client = new HttpClient();
-                using HttpResponseMessage response = await client.GetAsync(_urlDataConfig.URL);
-                if (response.IsSuccessStatusCode)
-                {
-                    int statusCode = (int)response.StatusCode;
-                    string msg = "" + response.ReasonPhrase;
-
-                    await AddLog(_baseLogPath, statusCode, msg, _urlDataConfig.URL);
-                }
-                else
-                {
-                    int statusCode = (int)response.StatusCode;
-                    string msg = "" + response.ReasonPhrase;
-
-                    await AddLog(_baseLogPath, statusCode, msg, _urlDataConfig.URL);
-                }
-            }catch( HttpRequestException e)
-            {
-                await AddLog(_baseLogPath,000,e.Message,_urlDataConfig.URL);
-            }
+            int statusCode = (int)response.StatusCode;
+            string msg = "" + response.ReasonPhrase;
+            await Logger.Instance.AddLog("C:\\Github\\AdisyoCase\\HeartBeatApp\\HeartBeatApp\\log.txt", statusCode, msg, url);
         }
-        private async Task AddLog(string path, int statusCode, string msg, string URL)
+        else
         {
-            StreamWriter streamWriter = new StreamWriter(path, true);
-            string log = $"[{DateTime.Now}] [{statusCode}]  [{msg}] [{URL}]";
-            Console.WriteLine(log);
-            await streamWriter.WriteLineAsync(log);
-            streamWriter.Close();
-
+            int statusCode = (int)response.StatusCode;
+            string msg = "" + response.ReasonPhrase;
+            await Logger.Instance.AddLog("C:\\Github\\AdisyoCase\\HeartBeatApp\\HeartBeatApp\\log.txt", statusCode, msg, url);
         }
+        await Task.Delay(delay * 1000); 
+        await RequrisifHeartBeat(url, delay); 
+    }
+        
 
     }
 }

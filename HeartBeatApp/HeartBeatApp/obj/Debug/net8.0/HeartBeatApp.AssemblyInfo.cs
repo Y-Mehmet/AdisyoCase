@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HeartBeatApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+304e96be3dddc9c7d90d0ba61f429de11856e797")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+59e42416da180441409ad591f22a888cbef94355")]
 [assembly: System.Reflection.AssemblyProductAttribute("HeartBeatApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HeartBeatApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

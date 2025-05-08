@@ -4,20 +4,28 @@ using System.Text.Json;
 
 class Program
 {
-    static  async Task Main(string[] args)
+    static  void Main(string[] args)
     {
-        var json = File.ReadAllText("C:\\Github\\AdisyoCase\\HeartBeatApp\\HeartBeatApp\\config.json");
+       try{
+        while(true)
+       {
+         var json = File.ReadAllText("C:\\Github\\AdisyoCase\\HeartBeatApp\\HeartBeatApp\\config.json");
         var config= JsonSerializer.Deserialize<AppConfig>(json);
         List<Task> urlMonitorTasks = new List<Task>();
         foreach (var urlData in config.URLDatas)
         {
            var urlMonitor= new UrlMonitor(urlData);
             Console.WriteLine("Running Program main method");
-            urlMonitorTasks.Add(urlMonitor.StartTask());
-
+            
         }
-        await Task.WhenAll(urlMonitorTasks);
+        
+       }
+       }catch(Exception e)
+       {
+        Logger.Instance.AddLog("C:\\Github\\AdisyoCase\\HeartBeatApp\\HeartBeatApp\\log.txt", 000, e.Message, "Main");
+       }
     }
+    
 }
 public class EmailConfig
 {
