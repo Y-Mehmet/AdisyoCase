@@ -1,6 +1,10 @@
 
 using System.Text.Json;
-public sealed class Logger
+
+
+   
+
+  public sealed class Logger
 {
     
     private Logger() { }
@@ -20,6 +24,8 @@ public sealed class Logger
             string jsonLog = JsonSerializer.Serialize(logObject, new JsonSerializerOptions { WriteIndented = true });          
             await streamWriter.WriteLineAsync(jsonLog);
             streamWriter.Close();
+            Console.WriteLine(jsonLog);
 
         }
 }
+

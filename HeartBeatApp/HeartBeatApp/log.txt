@@ -1,4 +1,114 @@
-[8.05.2025 00:33:09] [0]  [Hedef makine etkin olarak reddettiğinden bağlantı kurulamadı. (localhost:5000)] [https://localHost:5000]
-[8.05.2025 01:30:52] [0]  [The SSL connection could not be established, see inner exception.] [https://localHost:5000]
-[8.05.2025 01:33:17] [200]  [OK] [http://localhost:5000]
-[8.05.2025 01:33:47] [0]  [Hedef makine etkin olarak reddettiğinden bağlantı kurulamadı. (localhost:5000)] [http://localhost:5000]
+{
+  "timestamp": "8.05.2025 10:09:44",
+  "statusCode": 200,
+  "message": "Success",
+  "url": "http://localhost:5000"
+}
+{
+  "timestamp": "8.05.2025 10:09:44",
+  "statusCode": 200,
+  "message": "Success",
+  "url": "http://google.com"
+}
+{
+  "timestamp": "8.05.2025 10:09:54",
+  "statusCode": 200,
+  "message": "Success",
+  "url": "http://localhost:5000"
+}
+{
+  "timestamp": "8.05.2025 10:09:55",
+  "statusCode": 200,
+  "message": "Success",
+  "url": "http://google.com"
+}
+{
+  "timestamp": "8.05.2025 10:10:04",
+  "statusCode": 200,
+  "message": "Success",
+  "url": "http://localhost:5000"
+}
+{
+  "timestamp": "8.05.2025 10:10:05",
+  "statusCode": 200,
+  "message": "Success",
+  "url": "http://google.com"
+}
+{
+  "timestamp": "8.05.2025 10:12:26",
+  "statusCode": 200,
+  "message": "Success",
+  "url": "http://localhost:5000"
+}
+{
+  "timestamp": "8.05.2025 10:12:27",
+  "statusCode": 200,
+  "message": "Success",
+  "url": "http://google.com"
+}
+{
+  "timestamp": "8.05.2025 10:12:31",
+  "statusCode": 200,
+  "message": "Success",
+  "url": "http://localhost:5000"
+}
+{
+  "timestamp": "8.05.2025 10:12:36",
+  "statusCode": 200,
+  "message": "Success",
+  "url": "http://localhost:5000"
+}
+{
+  "timestamp": "8.05.2025 10:12:38",
+  "statusCode": 200,
+  "message": "Success",
+  "url": "http://google.com"
+}
+{
+  "timestamp": "8.05.2025 10:12:41",
+  "statusCode": 200,
+  "message": "Success",
+  "url": "http://localhost:5000"
+}
+{
+  "timestamp": "8.05.2025 10:12:46",
+  "statusCode": 200,
+  "message": "Success",
+  "url": "http://localhost:5000"
+}
+{
+  "timestamp": "8.05.2025 10:12:49",
+  "statusCode": 200,
+  "message": "Success",
+  "url": "http://google.com"
+}
+{
+  "timestamp": "8.05.2025 10:12:56",
+  "statusCode": 0,
+  "message": "Hedef makine etkin olarak reddetti\u011Finden ba\u011Flant\u0131 kurulamad\u0131. (localhost:5000)",
+  "url": "http://localhost:5000"
+}
+{
+  "timestamp": "8.05.2025 10:12:59",
+  "statusCode": 200,
+  "message": "Success",
+  "url": "http://google.com"
+}
+{
+  "timestamp": "8.05.2025 10:13:05",
+  "statusCode": 0,
+  "message": "Hedef makine etkin olarak reddetti\u011Finden ba\u011Flant\u0131 kurulamad\u0131. (localhost:5000)",
+  "url": "http://localhost:5000"
+}
+{
+  "timestamp": "8.05.2025 10:13:11",
+  "statusCode": 200,
+  "message": "Success",
+  "url": "http://google.com"
+}
+{
+  "timestamp": "8.05.2025 10:13:14",
+  "statusCode": 0,
+  "message": "Hedef makine etkin olarak reddetti\u011Finden ba\u011Flant\u0131 kurulamad\u0131. (localhost:5000)",
+  "url": "http://localhost:5000"
+}
