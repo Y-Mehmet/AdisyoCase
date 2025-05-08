@@ -3,15 +3,17 @@ using System.Collections.Generic;
 using System.IO;
 using System.Text.Json;
 using System.Threading.Tasks;
-
+using Microsoft.Extensions.DependencyInjection;
 public class Program
 {
+    private static string _baseLogPath = "C:\\Github\\AdisyoCase\\HeartBeatApp\\HeartBeatApp\\log.txt";
+    public static string _configPath = "C:\\Github\\AdisyoCase\\HeartBeatApp\\HeartBeatApp\\config.json";
     public static async Task Main(string[] args)
     {
         try
         {
             Console.WriteLine("Starting HeartBeatApp...");
-            string json = File.ReadAllText("C:\\Github\\AdisyoCase\\HeartBeatApp\\HeartBeatApp\\config.json");
+            string json = File.ReadAllText(_configPath);
             AppConfig appConfig = JsonSerializer.Deserialize<AppConfig>(json);
 
             if (appConfig == null || appConfig.URLDatas == null || appConfig.URLDatas.Length == 0)
@@ -21,9 +23,10 @@ public class Program
 
             List<Task> tasks = new List<Task>();
 
-            // Her URL için ayrı bir Task oluşturuluyor
+           
             foreach (var urlData in appConfig.URLDatas)
             {
+                
                 ILogger logger = new Logger();
                 IEmailSender emailSender = new SmtpEmailSender(urlData.Email,logger);
                 ILogger logger2 = new Logger();
@@ -31,7 +34,7 @@ public class Program
                 tasks.Add(urlMonitor.StartAsync());
             }
 
-            // Tüm task'ları paralel olarak çalıştırıyoruz
+           
             await Task.WhenAll(tasks);
         }
         catch (Exception ex)
@@ -43,7 +46,7 @@ public class Program
                     Status = "Failed",
                     Msg = ex.Message,
                     URL = "C:\\Github\\AdisyoCase\\HeartBeatApp\\HeartBeatApp\\Programs.Main",
-                    Path = "C:\\Github\\AdisyoCase\\HeartBeatApp\\HeartBeatApp\\log.txt"
+                    Path = _baseLogPath
                 };
                 Console.WriteLine(log.ToString());
         }

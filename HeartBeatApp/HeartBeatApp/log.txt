@@ -286,3 +286,39 @@
   "message": "Hedef makine etkin olarak reddetti\u011Finden ba\u011Flant\u0131 kurulamad\u0131. (localhost:5000)",
   "url": "http://localhost:5000"
 }
+{
+  "timestamp": "8.05.2025 13:59:27",
+  "statusCode": 200,
+  "message": "Success web site is up",
+  "url": "http://google.com"
+}
+{
+  "timestamp": "8.05.2025 13:59:31",
+  "statusCode": 0,
+  "message": "Hedef makine etkin olarak reddetti\u011Finden ba\u011Flant\u0131 kurulamad\u0131. (localhost:5000)",
+  "url": "http://localhost:5000"
+}
+{
+  "timestamp": "8.05.2025 13:59:31",
+  "statusCode": 0,
+  "message": "The SMTP server requires a secure connection or the client was not authenticated. The server response was: 5.7.0 Authentication Required. For more information, go to",
+  "url": "C:\\Github\\AdisyoCase\\HeartBeatApp\\HeartBeatApp\\SmtpEmailSender.SendEmailAsync"
+}
+{
+  "timestamp": "8.05.2025 13:59:38",
+  "statusCode": 200,
+  "message": "Success web site is up",
+  "url": "http://google.com"
+}
+{
+  "timestamp": "8.05.2025 13:59:41",
+  "statusCode": 0,
+  "message": "Hedef makine etkin olarak reddetti\u011Finden ba\u011Flant\u0131 kurulamad\u0131. (localhost:5000)",
+  "url": "http://localhost:5000"
+}
+{
+  "timestamp": "8.05.2025 13:59:42",
+  "statusCode": 0,
+  "message": "The SMTP server requires a secure connection or the client was not authenticated. The server response was: 5.7.0 Authentication Required. For more information, go to",
+  "url": "C:\\Github\\AdisyoCase\\HeartBeatApp\\HeartBeatApp\\SmtpEmailSender.SendEmailAsync"
+}

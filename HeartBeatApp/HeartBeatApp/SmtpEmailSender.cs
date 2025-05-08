@@ -42,7 +42,7 @@ public class SmtpEmailSender : IEmailSender
                     Status = "Failed",
                     Msg = ex.Message,
                     URL = "C:\\Github\\AdisyoCase\\HeartBeatApp\\HeartBeatApp\\SmtpEmailSender.SendEmailAsync",
-                    Path = "C:\\Github\\AdisyoCase\\HeartBeatApp\\HeartBeatApp\\log.txt"
+                    Path = _baseLogPath
                 };
                 await _logger.AddLog(log);
         }
