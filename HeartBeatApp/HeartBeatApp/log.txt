@@ -160,3 +160,129 @@
   "message": "Success",
   "url": "http://google.com"
 }
+{
+  "timestamp": "8.05.2025 13:39:32",
+  "statusCode": 200,
+  "message": "Success web site is up",
+  "url": "http://google.com"
+}
+{
+  "timestamp": "8.05.2025 13:39:36",
+  "statusCode": 0,
+  "message": "Hedef makine etkin olarak reddetti\u011Finden ba\u011Flant\u0131 kurulamad\u0131. (localhost:5000)",
+  "url": "http://localhost:5000"
+}
+{
+  "timestamp": "8.05.2025 13:39:43",
+  "statusCode": 200,
+  "message": "Success web site is up",
+  "url": "http://google.com"
+}
+{
+  "timestamp": "8.05.2025 13:39:45",
+  "statusCode": 0,
+  "message": "Hedef makine etkin olarak reddetti\u011Finden ba\u011Flant\u0131 kurulamad\u0131. (localhost:5000)",
+  "url": "http://localhost:5000"
+}
+{
+  "timestamp": "8.05.2025 13:39:53",
+  "statusCode": 200,
+  "message": "Success web site is up",
+  "url": "http://google.com"
+}
+{
+  "timestamp": "8.05.2025 13:39:54",
+  "statusCode": 0,
+  "message": "Hedef makine etkin olarak reddetti\u011Finden ba\u011Flant\u0131 kurulamad\u0131. (localhost:5000)",
+  "url": "http://localhost:5000"
+}
+{
+  "timestamp": "8.05.2025 13:40:03",
+  "statusCode": 0,
+  "message": "Hedef makine etkin olarak reddetti\u011Finden ba\u011Flant\u0131 kurulamad\u0131. (localhost:5000)",
+  "url": "http://localhost:5000"
+}
+{
+  "timestamp": "8.05.2025 13:40:03",
+  "statusCode": 200,
+  "message": "Success web site is up",
+  "url": "http://google.com"
+}
+{
+  "timestamp": "8.05.2025 13:40:12",
+  "statusCode": 0,
+  "message": "Hedef makine etkin olarak reddetti\u011Finden ba\u011Flant\u0131 kurulamad\u0131. (localhost:5000)",
+  "url": "http://localhost:5000"
+}
+{
+  "timestamp": "8.05.2025 13:40:14",
+  "statusCode": 200,
+  "message": "Success web site is up",
+  "url": "http://google.com"
+}
+{
+  "timestamp": "8.05.2025 13:40:21",
+  "statusCode": 0,
+  "message": "Hedef makine etkin olarak reddetti\u011Finden ba\u011Flant\u0131 kurulamad\u0131. (localhost:5000)",
+  "url": "http://localhost:5000"
+}
+{
+  "timestamp": "8.05.2025 13:40:24",
+  "statusCode": 200,
+  "message": "Success web site is up",
+  "url": "http://google.com"
+}
+{
+  "timestamp": "8.05.2025 13:40:30",
+  "statusCode": 0,
+  "message": "Hedef makine etkin olarak reddetti\u011Finden ba\u011Flant\u0131 kurulamad\u0131. (localhost:5000)",
+  "url": "http://localhost:5000"
+}
+{
+  "timestamp": "8.05.2025 13:45:01",
+  "statusCode": 200,
+  "message": "Success web site is up",
+  "url": "http://google.com"
+}
+{
+  "timestamp": "8.05.2025 13:45:05",
+  "statusCode": 0,
+  "message": "Hedef makine etkin olarak reddetti\u011Finden ba\u011Flant\u0131 kurulamad\u0131. (localhost:5000)",
+  "url": "http://localhost:5000"
+}
+{
+  "timestamp": "8.05.2025 13:45:12",
+  "statusCode": 200,
+  "message": "Success web site is up",
+  "url": "http://google.com"
+}
+{
+  "timestamp": "8.05.2025 13:45:17",
+  "statusCode": 0,
+  "message": "Hedef makine etkin olarak reddetti\u011Finden ba\u011Flant\u0131 kurulamad\u0131. (localhost:5000)",
+  "url": "http://localhost:5000"
+}
+{
+  "timestamp": "8.05.2025 13:45:22",
+  "statusCode": 200,
+  "message": "Success web site is up",
+  "url": "http://google.com"
+}
+{
+  "timestamp": "8.05.2025 13:45:28",
+  "statusCode": 0,
+  "message": "Hedef makine etkin olarak reddetti\u011Finden ba\u011Flant\u0131 kurulamad\u0131. (localhost:5000)",
+  "url": "http://localhost:5000"
+}
+{
+  "timestamp": "8.05.2025 13:45:33",
+  "statusCode": 200,
+  "message": "Success web site is up",
+  "url": "http://google.com"
+}
+{
+  "timestamp": "8.05.2025 13:45:40",
+  "statusCode": 0,
+  "message": "Hedef makine etkin olarak reddetti\u011Finden ba\u011Flant\u0131 kurulamad\u0131. (localhost:5000)",
+  "url": "http://localhost:5000"
+}

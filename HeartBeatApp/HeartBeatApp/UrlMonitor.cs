@@ -81,6 +81,15 @@ using System.Net.Mail;
                         Path = _baseLogPath
                     };
                   await _logger.AddLog(log);
+                  string to= _urlDataConfig.Email.To;
+                    string subject = $"[Heartbeat Error] {_urlDataConfig.URL}";
+                    string body = $@"
+                                        An error occurred while checking {_urlDataConfig.URL}.
+
+                                        Time: {DateTime.Now}
+                                        Error Message: {ex.Message}
+                                        ";
+                   await _emailSender.SendEmailAsync(to, subject, body);
             }
 
             // Her URL için farklı bir delay uygulanacak

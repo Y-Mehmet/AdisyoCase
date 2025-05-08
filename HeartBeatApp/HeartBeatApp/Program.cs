@@ -24,8 +24,10 @@ public class Program
             // Her URL için ayrı bir Task oluşturuluyor
             foreach (var urlData in appConfig.URLDatas)
             {
-                IEmailSender emailSender = new SmtpEmailSender(urlData.Email);
-                UrlMonitor urlMonitor = new UrlMonitor(urlData, emailSender);
+                ILogger logger = new Logger();
+                IEmailSender emailSender = new SmtpEmailSender(urlData.Email,logger);
+                ILogger logger2 = new Logger();
+                UrlMonitor urlMonitor = new UrlMonitor(urlData,logger2, emailSender);
                 tasks.Add(urlMonitor.StartAsync());
             }
 

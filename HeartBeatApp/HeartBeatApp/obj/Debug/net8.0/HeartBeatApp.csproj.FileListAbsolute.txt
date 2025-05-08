@@ -13,3 +13,7 @@ C:\Github\AdisyoCase\HeartBeatApp\HeartBeatApp\obj\Debug\net8.0\refint\HeartBeat
 C:\Github\AdisyoCase\HeartBeatApp\HeartBeatApp\obj\Debug\net8.0\HeartBeatApp.pdb
 C:\Github\AdisyoCase\HeartBeatApp\HeartBeatApp\obj\Debug\net8.0\HeartBeatApp.genruntimeconfig.cache
 C:\Github\AdisyoCase\HeartBeatApp\HeartBeatApp\obj\Debug\net8.0\ref\HeartBeatApp.dll
+C:\Github\AdisyoCase\HeartBeatApp\HeartBeatApp\obj\Debug\net8.0\HeartBeatApp.csproj.AssemblyReference.cache
+C:\Github\AdisyoCase\HeartBeatApp\HeartBeatApp\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Github\AdisyoCase\HeartBeatApp\HeartBeatApp\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Github\AdisyoCase\HeartBeatApp\HeartBeatApp\obj\Debug\net8.0\HeartBea.DC106708.Up2Date
