@@ -112,3 +112,51 @@
   "message": "Hedef makine etkin olarak reddetti\u011Finden ba\u011Flant\u0131 kurulamad\u0131. (localhost:5000)",
   "url": "http://localhost:5000"
 }
+{
+  "timestamp": "8.05.2025 11:09:53",
+  "statusCode": 200,
+  "message": "Success",
+  "url": "http://google.com"
+}
+{
+  "timestamp": "8.05.2025 11:09:56",
+  "statusCode": 0,
+  "message": "Hedef makine etkin olarak reddetti\u011Finden ba\u011Flant\u0131 kurulamad\u0131. (localhost:5000)",
+  "url": "http://localhost:5000"
+}
+{
+  "timestamp": "8.05.2025 11:10:03",
+  "statusCode": 200,
+  "message": "Success",
+  "url": "http://google.com"
+}
+{
+  "timestamp": "8.05.2025 11:10:05",
+  "statusCode": 0,
+  "message": "Hedef makine etkin olarak reddetti\u011Finden ba\u011Flant\u0131 kurulamad\u0131. (localhost:5000)",
+  "url": "http://localhost:5000"
+}
+{
+  "timestamp": "8.05.2025 11:10:14",
+  "statusCode": 200,
+  "message": "Success",
+  "url": "http://google.com"
+}
+{
+  "timestamp": "8.05.2025 11:10:14",
+  "statusCode": 0,
+  "message": "Hedef makine etkin olarak reddetti\u011Finden ba\u011Flant\u0131 kurulamad\u0131. (localhost:5000)",
+  "url": "http://localhost:5000"
+}
+{
+  "timestamp": "8.05.2025 11:10:23",
+  "statusCode": 0,
+  "message": "Hedef makine etkin olarak reddetti\u011Finden ba\u011Flant\u0131 kurulamad\u0131. (localhost:5000)",
+  "url": "http://localhost:5000"
+}
+{
+  "timestamp": "8.05.2025 11:10:25",
+  "statusCode": 200,
+  "message": "Success",
+  "url": "http://google.com"
+}

@@ -5,18 +5,24 @@ using System.Text;
 using System.Threading.Tasks;
 using System.IO;
 using System.Net.Http;
+using System.Net;
+using System.Net.Mail;
 
 
    public class UrlMonitor
 {
     private readonly URLDataConfig _urlDataConfig;
+
     private string _baseLogPath = "C:\\Github\\AdisyoCase\\HeartBeatApp\\HeartBeatApp\\log.txt";
     
-    public UrlMonitor(URLDataConfig urlDataConfig)
+   private readonly IEmailSender _emailSender;
+
+    public UrlMonitor(URLDataConfig urlDataConfig, IEmailSender emailSender)
     {
         _urlDataConfig = urlDataConfig;
-        Console.WriteLine($"Monitoring URL: {_urlDataConfig.URL} with delay: {_urlDataConfig.Delay} seconds");
+        _emailSender = emailSender;
     }
+
 
     public async Task StartAsync()
     {
@@ -35,6 +41,15 @@ using System.Net.Http;
                 else
                 {
                     await Logger.Instance.AddLog(_baseLogPath, (int)response.StatusCode, "Failed", _urlDataConfig.URL);
+                    string to= _urlDataConfig.Email.To;
+                    string subject = $"[Heartbeat Error] {_urlDataConfig.URL}";
+                    string body = $@"
+                                        An error occurred while checking {_urlDataConfig.URL}.
+
+                                        Time: {DateTime.Now}
+                                        Error Message: {response.StatusCode}
+                                        ";
+                   await _emailSender.SendEmailAsync(to, subject, body);
                 }
             }
             catch (Exception ex)
